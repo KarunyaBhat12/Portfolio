@@ -1,0 +1,222 @@
+:root {
+    --blue-color: #1B94ED;
+    --light-blue-color: #B9DEF9;
+    --light-color: #BBDFF9;
+    --white-color: #FFFFFF;
+    --black-color: #0E0924;
+}
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+ 
+  .btn {
+    /*padding: 11px 86px;
+    border-radius: 24px;
+    color: #fff;
+    display: inline-block;
+    font-family: Inria Serif;
+    font-weight: 200;
+    font-size: 32px;
+    text-decoration: none;
+    position: relative;
+    align-self: center;
+    margin-left: 14%;*/
+    width: 470px;
+    height: 80px;
+    /* flex-shrink: 0; */
+    border-radius: 24px;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 90px;
+    font-size: 16px;
+    font-weight: 200;
+    align-items: center;
+    margin-top: -10%;
+    transform: translateY(-100px);
+    transform: translateX(135px);
+  }
+  
+  
+  .btn.light {
+    background: var(--black-color);
+  }
+
+  header  {
+    font-family: "Irish Grover", sans-serif;
+    background: linear-gradient(180deg, #1B94ED 0%, #d1e6f5 100%);
+    height: 100vh;
+    width: 100%;
+  }
+  
+  nav {
+    font-family: "Irish Grover", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1430px;
+    top: 0;
+    padding: 36px 0;
+    z-index: 100;
+    /* transition: all 500ms ease; */
+  }
+
+  nav .logo {
+    /* font-family: "Irish Grover", sans-serif; 
+    font-weight: 900;
+    font-size: 40px;
+    color: #0E0924; */
+    /*color: #0E0924;
+    font-family: "Irish Grover", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;*/
+    color: #0E0924;
+    font-family: "Irish Grover", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 109px;
+    list-style: none;
+    font-family: "Irish Grover", sans-serif;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    /*font-weight: bold;
+    font-size: 32px;
+    color: #0E0924;*/
+    text-decoration: none;
+    color: #0E0924;
+    font-family: "Irish Grover", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .main-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    position: relative;
+    color: #fff;
+  }
+
+  .main-section .left-text{
+    flex-direction: column;
+  }
+  
+  .main-section .left img{
+    width: 540px;
+    height: 439px;
+    flex-shrink: 0;
+    margin-left: 10%;
+    /* vertical-align: middle; */
+    /* margin-left: 10%; */
+    /* margin-top: -10%; */
+    /* transform: translateX(60%); */
+  
+  }
+
+  .main-section .left-text h2 {
+    color: #000;
+    text-align: center;
+    font-family: Irish Grover;
+    font-size: 40px;
+    font-weight: 400;
+    transform: translateY(-50%);
+  }
+
+  .main-section .left .left-text p{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px; /* 145.833% */
+    margin-left: 0;
+    width: 723px;
+    height: 110px;
+    transform: translateY(-30%);
+  }
+
+  .wrapper .right img{
+    width: 550px;
+    height: 490px;
+    flex-shrink: 0;
+    margin-top: -10%;
+    margin-right:-20%;
+    transform: translateX(30%);
+  
+  }
+
+  .wrapper .layer1 img{
+    width: 800px;
+    height: 800px;
+    flex-shrink: 0;
+    margin-top: -10%;
+    margin-right:-20%;
+    transform: translateX(40%);
+    
+  }
+
+  /* .wrapper .links h3{
+    margin-bottom: 10%;
+  } */
+  
+  .wrapper .links{
+    display: flex;
+    transform: translateY(-90%);
+  }
+
+  .wrapper .links .contact h3{
+    margin-bottom: 30px;
+  }
+
+  .wrapper .links .social a img{
+    transform: translateX(25%);
+    height: 30px;
+    width: 30px;
+    /* margin-bottom: 2px; */
+    
+  }
+
+  .wrapper .links .social2 a img{
+    transform: translateX(100%);
+    height: 30px;
+    width: 30px;
+
+  }
+  
+  .wrapper .links .social3 a img{
+    transform: translateX(150%);
+    height: 30px;
+    width: 30px;
+
+  }
+
+  .wrapper .links .about h3{
+    transform: translateX(1400%);
+  }
