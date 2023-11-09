@@ -4,6 +4,7 @@
     --light-color: #BBDFF9;
     --white-color: #FFFFFF;
     --black-color: #0E0924;
+    --purple-color: #D4D1EE;
 }
 
   *,
@@ -21,7 +22,9 @@
     margin: 0 auto;
   }
 
- 
+ *{
+  scroll-behavior: smooth;
+ }
   .btn {
     /*padding: 11px 86px;
     border-radius: 24px;
@@ -59,6 +62,7 @@
     background: linear-gradient(180deg, #1B94ED 0%, #d1e6f5 100%);
     height: 100vh;
     width: 100%;
+    
   }
   
   nav {
@@ -111,6 +115,14 @@
     font-size: 32px;
     font-weight: 400;
     line-height: normal;
+  }
+
+  nav.scrolled {
+    background: var(--white-color);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    top: 0;
+    padding: 12px;
   }
 
   .main-section {
@@ -186,7 +198,7 @@
     margin-bottom: 10%;
   } */
   
-  .wrapper .links{
+  /* .wrapper .links{
     display: flex;
     transform: translateY(-90%);
   }
@@ -203,7 +215,7 @@
     
   }
 
-  .wrapper .links .social2 a img{
+  /* .wrapper .links .social2 a img{
     transform: translateX(100%);
     height: 30px;
     width: 30px;
@@ -219,4 +231,261 @@
 
   .wrapper .links .about h3{
     transform: translateX(1400%);
+  } */ */
+
+  .testimonials-section {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    
+  }
+  
+  /* .testimonials-section .mobile-btn {
+    display: none;
+  } */
+  
+  .testimonials-section .testimonial-card {
+    margin-top: 10%;
+    width: 1200px;
+    background: #0E0924;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.);
+    border-radius: 24px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+
+  .wrapper .testimonials-section .testimonial-card{
+    background: var(--black-color);
+  }
+  
+  /* .testimonials-section .testimonial-card::before {
+    content: "";
+    width: 28px;
+    position: absolute;
+    height: 40px;
+    top: -40px;
+    left: 60px;
+    background: var(--dark-blue-color);
+    border-radius: 24px 24px 0 0;
+  } */
+  
+  /* .testimonials-section .testimonial-card:last-child::before {
+    left: 40px;
+    top: -50px;
+    border-radius: 0 0 24px 24px;
+    height: calc(100% + 90px);
+    z-index: -1;
+  } */
+
+  .wrapper .testimonials-section .testimonial-card .info pre{
+    font-size: 20px;
+    margin-left: -20%;
+  }
+
+  .wrapper .testimonials-section .testimonial-card .info{
+    background: var(--purple-color);
+  }
+
+  .wrapper .testimonials-section{
+    /* background: linear-gradient(180deg, #B9DAF1 0%, #FFFFFF 100%); */
+    gap: 100px;
+    /* align-items: center; */
+    /* transform: translateX(-10%); */
+    padding: 10px 0px;
+    padding-bottom: 120px;
+    /* gap: 14px; */
+    min-width: 310px;
+    /* height: 100px; */
+  }
+
+  
+  .testimonials-section .testimonial-card .content {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+    border-radius: 24px;
+    padding: 24px 32px;
+    background: var( --black-color);
+  }
+  
+  /* .testimonials-section .testimonial-card:last-child .content {
+    background: var(--orange-color);
+  } */
+
+  /* .testimonials-section .testimonial-card .info h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    color: var(--dark-blue-color);
+  }
+   */
+  .testimonials-section .testimonial-card .info {
+    padding: 24px 32px;
+    background: #fff;
+    border-radius: 24px;
+  }
+  
+  /* .testimonials-section .testimonial-card .info p.company {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--dark-blue-color);
+  } */
+/*   
+  .testimonials-section .testimonial-card img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 32px;
+    bottom: 20px;
+  }
+   */
+  .testimonials-section .testimonial-card:last-child {
+    transform: translateX(50px);
+  }
+  
+  .testimonials-section .features {
+    margin-bottom: 30px;
+  }
+
+
+  .courses-section {
+    background: linear-gradient(180deg, #6FBAEF 0%, #bad8ef 100%);
+    padding: 70px 0;
+    padding-bottom: 120px;
+  }
+  
+  .courses-section h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--dark-blue-color);
+  }
+  
+  .courses-section .course-cards {
+    display: flex;
+    gap: 70px;
+    /* width: 100%; */
+  }
+  
+  .courses-section .course-cards img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    /* border-radius: 24px; */
+    height: 290px;
+    width: 507px;
+    margin-left: 2%;
+  }
+  
+  .courses-section .course-card {
+    background: #DBECF8;
+    border-radius: 24px;
+    padding: 0px 32px;
+    margin: 40px 0;
+    position: relative;
+    margin-left: 5%;
+    height: 400px;
+    width: 600px;
+
+  }
+  
+  .courses-section .course-card::after {
+    content: "";
+    height: 8px;
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 0;
+    background: var(--dark-blue-color);
+    border-radius: 24px;
+  }
+  
+  .courses-section .course-card h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 150%;
+  
+    color: var(--dark-blue-color);
+  }
+  
+  .courses-section .course-card .info {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .courses-section .course-card .duration {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    white-space: nowrap;
+    color: var(--dark-blue-color);
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  /* .courses-section .course-card .duration::before {
+    content: url("images/clock.svg");
+    position: absolute;
+    top: 2px;
+    left: -6px;
+  } */
+  
+  .courses-section .wrapper {
+    position: relative;
+  }
+  
+  /* .courses-section .wrapper .btn {
+    position: absolute;
+    right: 0;
+  } */
+
+  footer {
+    background: var(--black-color);
+    color: #fff;
+    margin-top: 100px;
+    padding: 90px 0;
+    font-size: 20px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  
+  
+  footer ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  footer ul li {
+    margin: 16px 0;
+  }
+  
+  footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+  }
+  
+  footer .social {
+    margin-left: 20px;
+  }
+  
+  footer .social a {
+    margin-right: 28px;
+  }
+  
+  footer .social img{
+    height: 40px;
+    width: 40px;
   }
